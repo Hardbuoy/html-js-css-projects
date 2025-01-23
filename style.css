@@ -25,4 +25,55 @@ html {
     font-family: sans-serif;
   }
 
+  /* Nav bar */
+
+  .Navbar menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Navbar li {
+    margin-right: 32px;
+  }
+
+  .Navbar {
+    background-color: #0c1d66;
+    color: yellow;
+    border-radius: 10px;
+  }
+
+  .Navbar a {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  .Navbar a:hover {
+    text-decoration: underline;
+  }
+
+  /* code block */
+
+  pre {
+    background-color: rgb(192, 131, 131);
+    padding: 16px;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  code {
+    color: #1d1d1d;
+    font-family: monospace;
+  }
+
+  .title {
+    color: red;
+  }
+
+  .paragraph {
+    color: rgb(126, 126, 12);
+  }
+  
  

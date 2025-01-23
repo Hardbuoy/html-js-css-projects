@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./pomodoro.css" />
   </head>
   <body>
-    <nav>
-      <menu>
-        <li>
-          <a target="_blank" href="/">Home</a>
-          </li>
-        <li>
-          <a target="_blank" href="/pomodoro/pomodoro.html">Pomodoro Timer</a>
-        </li>
-        <li>
-          <a target="_blank" href="/box_shadow/box.html">Box Shadow Generator</a>
-        </li>
-        <li>
-          <a target="_blank" href="/Library/library.html">Library page</a>
-        </li>
-        <li>
-          <a target="_blank" href="/Expense/expense.html">Expense Tracker</a>
-        </li>
-      </menu>
-    </nav>
-    <div>
-      <h1>Pomodoro Timer</h1>
+    <h1>Pomodoro Timer</h1>
+
+    <!-- Main Container Pomodoro Timer-->
+    <div class="pomodoro">
+      <div class="pomodoro_time">
+        <span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+
+      <!-- Control buttons-->
+      <div class="pomodoro_buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <!--  Timer Settings -->
+      <div class="pomodoro_settings">
+        <label for="work-time">Work Time</label>
+        <input type="number" id="work-time" value="25" min="1" max="59" />
+        <label for="break-time">Break Time</label>
+        <input type="number" id="break-time" value="5" min="1" max="15" />
+      </div>
+
+      <!-- Display the current timer mode-->
+      <div class="pomodoro__status">
+        <span id="status">Work</span>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="pomodoro__progress">
+        <div id="progress"></div>
+      </div>
     </div>
   </body>
 </html>
